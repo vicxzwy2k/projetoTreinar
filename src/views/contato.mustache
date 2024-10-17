@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Simples com Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Faz o corpo ocupar toda a altura da tela */
+        }
+        .content {
+            flex: 1; /* Faz a área do conteúdo crescer e ocupar o espaço disponível */
+        }
+        .bg-baby-blue {
+            background-color: #a3c1e0; /* Azul bebê */
+        }
+        .card {
+            max-width: 500px; /* Define a largura máxima do card */
+            margin: auto; /* Centraliza o card */
+        }
+        .card-img-top {
+            width: 100%; /* Define a largura da imagem */
+            height: auto; /* Mantém a proporção da imagem */
+            margin: auto; /* Centraliza a imagem */
+        }
+        .navbar-brand img {
+            width: 90px; /* Aumente a largura do logo aqui */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-baby-blue">
+        <a class="navbar-brand" href="#">
+            <img src="images/Matu-16-10-2024.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contato">Contato</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-2" type="search" placeholder="Pesquisar..." aria-label="Search">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Body -->
+    <div class="container content mt-4">
+        <!-- Card com links para redes sociais -->
+        <div class="card text-center mt-4">
+            <img src="images/matueC.webp" class="card-img-top" alt="Imagem de Matuê"> <!-- Substitua pelo caminho da sua imagem -->
+            <div class="card-body bg-baby-blue">
+                <h5 class="card-title">Siga Matuê</h5>
+                <p class="card-text">Conecte-se com Matuê nas redes sociais.</p>
+                <a href="https://www.instagram.com/" class="btn btn-light">Instagram</a>
+                <a href="https://www.youtube.com/" class="btn btn-light">YouTube</a>
+                <a href="https://twitter.com/" class="btn btn-light">X (Twitter)</a>
+                <a href="https://www.spotify.com/" class="btn btn-light">Spotify</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-baby-blue text-center text-lg-start mt-4">
+        <div class="text-center p-3">
+            <p>© 2024 | <a href="#" class="text-dark">Termos de Serviço</a> | <a href="#" class="text-dark">Privacidade</a></p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

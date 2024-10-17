@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Simples com Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Faz o corpo ocupar toda a altura da tela */
+        }
+        .content {
+            flex: 1; /* Faz a área do conteúdo crescer e ocupar o espaço disponível */
+        }
+        .bg-baby-blue {
+            background-color: #a3c1e0; /* Azul bebê */
+        }
+        .card-img-top {
+            width: 50%; /* Define a largura da imagem como 50% */
+            height: auto; /* Mantém a proporção da imagem */
+            margin: auto; /* Centraliza a imagem */
+        }
+        .navbar-brand img {
+            width: 60px; /* Aumente a largura do logo aqui */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+        .form-group {
+            margin-bottom: 0.5rem; /* Reduz o espaço entre os campos do formulário */
+        }
+        .navbar-brand img {
+            width: 90px; /* Aumente a largura do logo aqui */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-baby-blue">
+        <a class="navbar-brand" href="#">
+            <img src="images/Matu-16-10-2024.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sobre.html">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-2" type="search" placeholder="Pesquisar..." aria-label="Search">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Body -->
+    <div class="container content mt-4">
+        <h1>Matuê - 333</h1>
+        <p>Matuê traz conceito e experimentações em “333”</p>
+        
+        <!-- Card de Imagem -->
+        <div class="card mt-4">
+            <img src="images/matue.webp" class="card-img-top" alt="Imagem Exemplo">
+            <div class="card-body text-center">
+                <h5 class="card-title">333</h5>
+                <p class="card-text">“Foi um processo de amadurecimento pessoal, e os estágios desse crescimento estão narrados nas faixas. “ 9 de set. de 2024.</p>
+                
+                <!-- Formulário de Cadastro -->
+                <form class="mt-2"> <!-- Reduzindo o espaço acima do formulário -->
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Digite seu email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="senha">Senha:</label>
+                        <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" required>
+                    </div>
+                    
+                </form>
+
+                <a href="#" class="btn btn-primary mt-2">ESCUTE AGORA</a> <!-- Reduzindo o espaço acima do botão -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-baby-blue text-center text-lg-start mt-4">
+        <div class="text-center p-3">
+            <p>© 2024 | <a href="#" class="text-dark">Termos de Serviço</a> | <a href="#" class="text-dark">Privacidade</a></p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

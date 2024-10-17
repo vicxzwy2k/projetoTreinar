@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Simples com Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Faz o corpo ocupar toda a altura da tela */
+        }
+        .content {
+            flex: 1; /* Faz a área do conteúdo crescer e ocupar o espaço disponível */
+        }
+        .bg-baby-blue {
+            background-color: #a3c1e0; /* Azul bebê */
+        }
+        .navbar-brand img {
+            width: 60px; /* Aumente a largura do logo aqui */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+        .img-fluid {
+            max-width: 550px; /* Aumenta a largura máxima da imagem */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+        .navbar-brand img {
+            width: 90px; /* Aumente a largura do logo aqui */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-baby-blue">
+        <a class="navbar-brand" href="#">
+            <img src="images/Matu-16-10-2024.png" alt="Logo"> <!-- Substitua pelo caminho da sua imagem -->
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contato">Contato</a>
+                </li>
+            </ul>
+            <!-- Formulário de Pesquisa -->
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-2" type="search" placeholder="Pesquisar..." aria-label="Search">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Body -->
+    <div class="container content mt-4">
+        <!-- Seção Conhecer o Artista -->
+        <div class="mt-5">
+            <div class="row mt-4">
+                <div class="col-md-6 text-center">
+                    <img src="images/matue2.webp" class="img-fluid" alt="Matuê">
+                </div>
+                <div class="col-md-6">
+                    <h1 class="text-center">Sobre</h1> <!-- Título centralizado -->
+                    <p>Matheus Brasileiro Aguiar, mais conhecido pelo nome artístico Matuê, é um rapper, cantor, compositor e guitarrista brasileiro. Ficou conhecido com o single "Anos Luz", lançado em 2017 e pelo álbum "Máquina do Tempo" lançado em 2020. É considerado um dos símbolos da música brasileira.
+                    Matuê é conhecido por suas letras que falam sobre a vida, superação e a busca por sonhos. Sua música tem ressoado com muitos fãs e ele continua a ser uma figura influente na cena musical brasileira.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-baby-blue text-center text-lg-start mt-4">
+        <div class="p-3">
+            <p class="mb-0">© 2024 | <a href="#" class="text-dark">Termos de Serviço</a> | <a href="#" class="text-dark">Privacidade</a></p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="htt
